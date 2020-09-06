@@ -26,4 +26,23 @@ div.classList.add('black');
 // wrapper.append(div);
 // wrapper.prepend(div);
 
-hearts[0].before(div);
+//hearts[0].before(div);   //hearts[0].after(div);
+//circle[0].remove();
+
+//hearts[0].replaceWith(circles[0]);
+
+div.innerHTML= "<h1>Hello world</h1>";     //работает со структурой
+//div.textContent = "HELLO";   //работает только с текстом
+
+div.insertAdjacentHTML("beforebegin", '<h2>Hello</h2>');  //Вставляет текст по первому элементу
+
+
+//---------УСТАРЕВШИЕ КОНСТРУКЦИИ
+
+
+// wrapper.appendChild(div);
+// wrapper.insertBefore(div, hearts[0]);  //hearts[0] - элемент, перед которым мы всталяем
+// wrapper.removeChild(hearts[1]);
+// wrapper.replaceChild(circles[0], hearts[0]); //меняем на первый элемент второй
+
+
